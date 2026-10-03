@@ -1,0 +1,133 @@
+.section {
+  background: var(--dark);
+  color: var(--text-on-dark);
+  padding: 38px var(--gutter) 56px;
+}
+
+.label {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--rule-dark);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--text-label);
+}
+
+.labelLine {
+  width: 40px;
+  height: 1px;
+  background: currentColor;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5%;
+}
+
+.studyCol {
+  display: flex;
+  flex-direction: column;
+}
+
+.canvas {
+  height: 430px;
+  margin-top: 30px;
+}
+
+.canvas[data-fallback] {
+  background: radial-gradient(circle at 50% 50%, rgb(240 100 0 / 0.25), transparent 40%);
+}
+
+.studyBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 18px;
+  border-top: 1px solid var(--rule-dark);
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: #c9c9c2;
+}
+
+.pause {
+  width: 24px;
+  height: 18px;
+  display: grid;
+  place-items: center;
+  color: var(--text-on-dark);
+}
+
+.foot {
+  margin-top: 66px;
+  display: grid;
+  gap: 18px;
+  font-size: 13px;
+  color: var(--text-on-dark-muted);
+}
+
+.copyCol {
+  display: flex;
+  flex-direction: column;
+  padding-top: 44px;
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: clamp(44px, 4.5vw, 69px);
+  font-weight: 500;
+  line-height: 1.06;
+  letter-spacing: -0.055em;
+  max-width: 520px;
+}
+
+.lead {
+  max-width: 480px;
+  margin-top: 46px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.55;
+}
+
+.body {
+  max-width: 470px;
+  margin-top: 30px;
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--text-on-dark-muted);
+}
+
+.cta {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--rule-dark);
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.cta svg {
+  transition: transform 0.6s var(--ease-out);
+}
+
+.cta:hover svg {
+  transform: rotate(45deg);
+}
+
+@media (max-width: 779px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .canvas {
+    height: 320px;
+  }
+  .cta {
+    margin-top: 48px;
+  }
+}

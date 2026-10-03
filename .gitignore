@@ -1,0 +1,17 @@
+# Third-party material: Anubi's renders, client logos, wordmark, copied CSS,
+# screenshots and video. Kept local only — never commit these.
+site/public/media/
+refs/*
+!refs/notes.md
+
+# dependencies / build output
+node_modules/
+.next/
+out/
+*.tsbuildinfo
+next-env.d.ts
+
+# misc
+.DS_Store
+.env*
+*.log

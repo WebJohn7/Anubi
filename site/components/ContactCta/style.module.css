@@ -1,0 +1,51 @@
+.cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 130px var(--gutter) 140px;
+  background: var(--bg);
+  text-align: center;
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: clamp(56px, 6.6vw, 101px);
+  font-weight: 500;
+  line-height: 0.92;
+  letter-spacing: -0.06em;
+}
+
+.button {
+  margin-top: 56px;
+  padding: 16px 34px 18px;
+  border-radius: 999px;
+  background: #131313;
+  color: var(--text-on-dark);
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.2;
+  transition: background-color 0.4s var(--ease-out), transform 0.5s var(--ease-out);
+}
+
+.button:hover {
+  background: #3a3a38;
+  transform: translateY(-2px);
+}
+
+.lead {
+  margin-top: 48px;
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.mail {
+  margin-top: 12px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.mail:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}

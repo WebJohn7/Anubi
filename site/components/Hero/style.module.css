@@ -1,0 +1,187 @@
+.hero {
+  position: relative;
+  height: 700px;
+  min-height: 100svh;
+  max-height: 900px;
+  background: var(--bg);
+  overflow: hidden;
+}
+
+.ring {
+  position: absolute;
+  inset: 0;
+  perspective: 1100px;
+  transform-style: preserve-3d;
+}
+
+.card {
+  position: absolute;
+  aspect-ratio: 16 / 10.5;
+  translate: -50% -50%;
+  transform: translate3d(var(--dx, 0), var(--dy, 0), 0) rotateX(calc(var(--tilt-x) + var(--rx, 0deg)))
+    rotateY(calc(var(--tilt-y) + var(--ry, 0deg))) rotateZ(calc(var(--tilt-z) + var(--spin, 0deg)));
+  box-shadow: 0 22px 34px -14px rgb(0 0 0 / 0.3), 0 4px 10px rgb(0 0 0 / 0.06);
+  will-change: transform;
+  cursor: pointer;
+  transition: box-shadow 0.5s var(--ease-out);
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.7s var(--ease-out);
+}
+
+.card:hover {
+  z-index: 3;
+  box-shadow: 0 30px 50px -16px rgb(0 0 0 / 0.38);
+}
+
+.card:hover img {
+  transform: scale(1.04);
+}
+
+.label {
+  position: absolute;
+  left: calc(100% + 10px);
+  bottom: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  width: max-content;
+  max-width: 160px;
+  padding: 5px 8px;
+  background: var(--surface);
+  border-radius: 6px;
+  box-shadow: 0 6px 18px rgb(0 0 0 / 0.08);
+  font-family: var(--font-mono);
+  font-size: 10px;
+  line-height: 1.3;
+  color: var(--text);
+  opacity: 0;
+  transform: translateY(6px);
+  pointer-events: none;
+  transition: opacity 0.35s var(--ease-out), transform 0.5s var(--ease-out);
+}
+
+.card:hover .label {
+  opacity: 1;
+  transform: none;
+}
+
+.center {
+  position: absolute;
+  left: 50%;
+  top: 52%;
+  translate: -50% -50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  pointer-events: none;
+}
+
+.wordmarkWrap {
+  position: relative;
+  width: min(518px, 70vw);
+}
+
+.wordmark img {
+  width: 100%;
+  height: auto;
+}
+
+.scribbles {
+  position: absolute;
+  left: -14%;
+  top: -110%;
+  width: 128%;
+  height: auto;
+  overflow: visible;
+}
+
+.star {
+  position: absolute;
+  display: block;
+}
+
+.starTop {
+  left: 59%;
+  top: -76%;
+}
+
+.starBottom {
+  left: 30%;
+  top: 150%;
+}
+
+.caption {
+  margin-top: 26px;
+  font-size: 12.3px;
+  font-weight: 450;
+  line-height: 1.4;
+  letter-spacing: -0.015em;
+  color: var(--text-soft);
+  text-align: center;
+  white-space: pre-line;
+}
+
+.bottom {
+  position: absolute;
+  left: var(--gutter);
+  right: var(--gutter);
+  bottom: 28px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.statement {
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 1.06;
+  letter-spacing: -0.045em;
+}
+
+.statement span {
+  color: #7a7a74;
+}
+
+.discover {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--text);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.discover svg {
+  transition: transform 0.5s var(--ease-out);
+}
+
+.discover:hover svg {
+  transform: translateY(4px);
+}
+
+@media (max-width: 779px) {
+  /* Phone: fewer, smaller cards so the wordmark and caption stay clear. */
+  .card {
+    scale: 0.55;
+  }
+  .card:nth-child(n + 9) {
+    display: none;
+  }
+  .center {
+    z-index: 2;
+  }
+  .caption {
+    padding: 4px 8px;
+    background: rgb(252 252 250 / 0.85);
+    border-radius: 6px;
+  }
+  .statement {
+    font-size: 22px;
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "nav": { "home": "Home", "code": "Code", "lab": "Lab", "work": "Work", "contact": "Contact us", "tagline": "Creative duo" },
+  "hero": {
+    "caption": "Creative duo. CGI,\nmotion and web.",
+    "statement1": "Creative Direction",
+    "statement2": "and Production",
+    "discover": "Discover"
+  },
+  "clients": { "title": "Clients" },
+  "services": {
+    "title": "Services",
+    "headline1": "Creative Direction",
+    "headline2": "and Production",
+    "intro": "Images, motion and code for brands and studios. We start from a rough idea and carry it all the way to finished work, cared for in every detail.",
+    "items": [
+      { "name": "Visual", "tags": ["3D", "CGI", "Illustration", "AI"] },
+      { "name": "Animation", "tags": ["Motion design", "VFX", "Advertising"] },
+      { "name": "Web", "tags": ["Websites", "WebGL", "Custom software"] }
+    ],
+    "note": "You work directly with the people making it. One point of contact from brief to delivery."
+  },
+  "featured": {
+    "title": "Featured",
+    "beyond": "Beyond the projects",
+    "scroll": "Scroll to see the projects"
+  },
+  "explore": { "label": "Project archive", "title": "Explore all work" },
+  "research": {
+    "label": "AI / Research and production",
+    "title": "CGI, motion and research with AI.",
+    "lead": "We use generative models alongside 3D, animation and compositing, to try different directions and reach the right image sooner.",
+    "body": "For every project we decide what to generate, what to model and what to finish by hand. The brief decides, together with the level of control it needs.",
+    "study": "Shape study",
+    "pause": "Pause animation",
+    "play": "Resume animation",
+    "foot1": "Visual explorations, concepts and sequences for campaigns.",
+    "foot2": "Every step stays in our hands, from the first test to the final file.",
+    "cta": "Explore the lab"
+  },
+  "code": {
+    "label": "Web design and development",
+    "tag": "/code",
+    "body": "We design and build websites, WebGL experiences and internal tools. Form, interaction and performance are worked out together.",
+    "tags": ["Websites", "WebGL / 3D", "Management tools"],
+    "cta": "Explore Code",
+    "ctaSub": "Go to code"
+  },
+  "cta": {
+    "title1": "Let's work",
+    "title2": "together.",
+    "button": "Contact us",
+    "mailLead": "or send us an email at",
+    "mail": "hello@example.com"
+  },
+  "footer": {
+    "menu": "Menu",
+    "services": "Services",
+    "vat": "VAT 00000000000",
+    "privacy": "Privacy Policy",
+    "cookies": "Cookie Management",
+    "cookiePrefs": "Change cookie preferences",
+    "signoff": "Anubi. Creative duo.",
+    "studyNote": "Local rebuild for study purposes."
+  },
+  "footerServices": [
+    "3D animation and CGI for products and campaigns",
+    "3D experiences and interactive content",
+    "CGI production and creative AI",
+    "Custom management software",
+    "Custom website development",
+    "Motion design and 2D/3D animation",
+    "Video production and commercials"
+  ]
+}

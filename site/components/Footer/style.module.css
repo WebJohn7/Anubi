@@ -1,0 +1,146 @@
+.footer {
+  background: var(--bg);
+  border-top: 1px solid #ebebe8;
+  padding: 52px var(--gutter) 40px;
+  font-family: var(--font-display);
+  overflow: hidden;
+}
+
+.cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding-top: 64px;
+}
+
+.colLabel {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.menu {
+  display: flex;
+  gap: 24px;
+  margin-top: 28px;
+}
+
+.menu a,
+.services a {
+  font-family: var(--font-ui);
+  font-size: 14px;
+  transition: color 0.3s var(--ease-out);
+}
+
+.menu a:hover,
+.services a:hover {
+  color: var(--text-muted);
+}
+
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 34px;
+  margin-top: 28px;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 64px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.socials {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+}
+
+.socials a {
+  display: inline-block;
+  padding: 6px 13px;
+  border-radius: 999px;
+  border: 1px solid #e3e3df;
+  background: #f1f1f1;
+  font-family: var(--font-ui);
+  font-size: 14px;
+  font-weight: 600;
+  transition: background-color 0.3s var(--ease-out);
+}
+
+.socials a:hover {
+  background: #e2e2e2;
+}
+
+.markWrap {
+  margin-top: 60px;
+  overflow: hidden;
+}
+
+.mark img {
+  width: 100%;
+  height: auto;
+}
+
+.lang {
+  display: flex;
+  justify-content: center;
+  gap: 44px;
+  margin-top: 46px;
+}
+
+.lang button {
+  font-family: var(--font-ui);
+  font-size: 12px;
+  color: var(--text-muted);
+  transition: color 0.3s var(--ease-out);
+}
+
+.lang .langActive,
+.lang button:hover {
+  color: var(--text);
+}
+
+.legal,
+.signoff,
+.study {
+  font-family: var(--font-ui);
+  text-align: center;
+  font-size: 12px;
+}
+
+.legal {
+  margin-top: 40px;
+}
+
+.underline {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.signoff {
+  margin-top: 26px;
+  color: var(--text-muted);
+}
+
+.study {
+  margin-top: 8px;
+  font-family: var(--font-mono);
+  font-size: 9px;
+  color: var(--text-label);
+}
+
+@media (max-width: 779px) {
+  .cols {
+    grid-template-columns: 1fr;
+  }
+  .menu {
+    flex-wrap: wrap;
+  }
+}

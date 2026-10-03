@@ -1,0 +1,114 @@
+# Plan: rebuild the anubi.io homepage (local study copy)
+
+## Context
+The goal is to rebuild https://anubi.io from scratch, with the same fonts, colors, layout and
+animations, as a practice exercise. It stays **local only**: it is never deployed and never
+presented as the user's own work, because it uses Anubi's renders, wordmark and client logos.
+This phase covers the homepage only.
+Decisions: match the original stack · homepage first · their images used locally · IT with an EN toggle.
+Copy: keep their short headings, nav labels and tags. Write my own body paragraphs of the same
+length and tone instead of copying theirs.
+
+## Status
+- DONE: `plan.txt`; `refs/reference.css` (the 3 stylesheets verbatim); Next.js 15 Pages Router
+  app in `Desktop/anubi/site/` (TypeScript, CSS Modules, ESLint); `gsap lenis ogl` installed.
+- DONE (by the user): 8 section screenshots in `refs/website screenshots/anubi1–8.png`, taken at
+  about 1900px physical = **1536 CSS px at 125% DPR**, plus a scroll-through video in `refs/*.mp4`.
+- Live-site Chrome capture freezes the tab (heavy WebGL), so the screenshots and video are now the ground truth.
+- DONE (2026-10-03): steps 1–7 built (video frames, assets, tokens/fonts, i18n, all 10 sections,
+  GSAP/Lenis motion, OGL sculpture, particle canvas). Diff round 1 done and `npm run build` passes.
+  The open list for round 2 is in `refs/notes.md`.
+- Deviation: the hero ring and Featured gallery use CSS 3D transforms driven by GSAP instead of
+  OGL planes. The look is the same and it allows DOM hover labels. OGL is used for the Research sculpture.
+
+## Design tokens (measured)
+- **Background** `#fcfcfa` (body `#fcfcfc`). **Text** `#131313` / `#0f0f0f`. **Muted** `#62625c`, `#4d4d49`.
+  **Label** `#b5b5ad`. **Rule** `#d9d9d3`. **Dark sections** `#171715`, text `#fcfcfa`.
+  **Nav pill** `#eee` (active) and `#e5e5e5` (CTA).
+- **Accents:** violet `#8060f5` / `#6543da`, orange `#ff7415` / `#f06400`, blue `#2878f0` / `#175ecc`,
+  plus yellow for the scribbles (sample it from the screenshot).
+- **Fonts** (next/font/google):
+  - Bricolage Grotesque: UI and body. 16/24; nav 15px/500 with -0.375px tracking.
+  - Epilogue 500: big headings. 98px with -7% tracking, line-height 1.08; section titles 33–69px.
+  - IBM Plex Mono 400: labels at 10–11px, some uppercase with +0.04em tracking.
+- **Easings:** `--ease-out: cubic-bezier(.16,1,.3,1)`, `--ease-io: cubic-bezier(.67,0,.285,1)`.
+  **Breakpoints:** 999 / 779 / 640 / 370.
+
+## Section spec (from the screenshots, at 1536 CSS px)
+1. **Header** (anubi1): fixed, floating white pill about 1310px wide, centered, top 12px,
+   radius 40px, soft shadow. On the left a black square logo plus "Anubi / Duo creativo". On the
+   right, pill links Home (active grey), Code, Lab, Work, and a "Contattaci" grey pill with a
+   circular ↗ button.
+2. **Hero** (anubi1, 700px tall): wordmark "ANUBI", extended black, about 520px wide, in the center
+   with a caption under it. Around it, about 14 project thumbnails in a 3D ring with perspective
+   tilt and drop shadows (WebGL/OGL plane gallery that drifts and follows the mouse). Hand-drawn
+   scribbles (blue loop, yellow strokes, orange curl) and violet asterisks draw in on load
+   (SVG stroke-dashoffset). Bottom left, a 30px two-line statement with the second line grey.
+   Bottom right, "Scopri ↓" with an underline.
+3. **Clients** (anubi2, 269px): a row of 10 grey logos spread evenly, with a rule below.
+   `logoOpacityWave` keyframe pulses their opacity in sequence.
+4. **Services** (anubi2–3, about 1037px): a centered 98px Epilogue headline over 2 lines with a
+   yellow scribble underline, and a muted 16px intro under it. Then a two-column block. Left: an
+   animated violet SVG loop line (draws and morphs). Right: "Visual", "Animation", "Web" stacked
+   with offsets, the active one in violet with mono tags floating around it (`nodeDrift`), cycling
+   on scroll. A rule below, then a small orange scribble and one line of 14px text.
+5. **In Evidenza** (anubi4, pinned for about 4500px): "In Evidenza" in 33px Epilogue on the left,
+   "Oltre i progetti ↘" mono link on the right. The center card is about 660×370 with a 38px
+   Epilogue title, ↗ icon and mono meta "type | client". The next card is skewed and peeks in from
+   the right. Bottom left, a counter "01 —— 06" with a wavy progress line. Bottom center, mono
+   "Scorri per vedere i progetti ↓". Scrolling moves through 6 projects using GSAP ScrollTrigger
+   pin + scrub, with cards rotating/skewing in from the right.
+6. **Explore all work** (256px): not in the screenshots; take it from video frames.
+7. **AI / Research** (anubi5, dark, 732px): mono label row with a leading line and a rule. Left:
+   the OGL canvas "Studio di forme", a wireframe sculpture of stacked rings (white + orange
+   lines, slowly rotating), with a caption row and a pause icon. Right: 69px Epilogue title, a
+   bold 20px lead paragraph and a muted 16px paragraph. Bottom: two short muted lines on the left,
+   and an "Esplora il lab ↗" row with an underline on the right.
+8. **Code** (anubi6, dark, 635px): rule; mono "DESIGN E SVILUPPO WEB" on the left and "/CODE" on
+   the right. Center: the word "code" made of white square particles (canvas, sampled from text,
+   mouse-reactive) over a radial glow, with drifting specks. A 20px muted paragraph under it.
+   Bottom: a mono tags row with dots, and an outlined "Esplora Code  VAI A CODE" button.
+9. **CTA** (anubi7, 637px): centered "Lavoriamo insieme." in about 100px Epilogue over 2 lines,
+   a black pill button "Contattaci" (Bricolage 800, about 40px), "o scrivici una mail a" in
+   muted text, then the email.
+10. **Footer** (anubi7–8, about 1930px): rule. "MENU" column (Home, Code, Lab, Work, Contattaci)
+    and a "SERVIZI" column (6 service links in 2 rows). VAT and email on the left; Instagram and
+    LinkedIn pills on the right. A giant "ANUBI" wordmark across the full content width. IT / EN
+    switch, policy links, sign-off line. `wordmark-arrive` keyframe on the big wordmark.
+
+## Steps
+1. **Video frames.** `npm i -D ffmpeg-static` in `site/`. Extract 2 fps frames of the
+   video to `refs/frames/`. Review them for: hero load sequence, scribble draw-in, services
+   cycling, the gallery transition between cards, the Explore strip, the Code particle behavior,
+   and the footer wordmark arrival. Number the motions in `refs/notes.md`.
+2. **Assets** (local only): download the hero/gallery project images (Sanity CDN URLs from the
+   page HTML), client logo SVGs, and the logo + ANUBI wordmark SVGs into `site/public/media/`.
+3. **Tokens + fonts:** `styles/tokens.css` (everything above) and `styles/globals.css` reset.
+   Fonts go in `_app.tsx` as CSS variables `--font-ui`, `--font-display`, `--font-mono`.
+4. **i18n:** `content/home.it.json` and `home.en.json`, `lib/locale.tsx` context + `useT()`. The
+   footer IT/EN buttons switch the language and persist it in localStorage.
+5. **Static layout:** one folder per section in `components/` (Header, Hero, Clients, Services,
+   Featured, ExploreAll, Research, CodeSection, ContactCta, Footer), each `index.tsx` +
+   `style.module.css`, in page order. Match each screenshot before adding any motion.
+6. **Motion:**
+   - `lib/smooth.ts`: Lenis driven by `gsap.ticker`, synced with `ScrollTrigger.update`.
+   - Reveals: fade/translate with `--ease-out`. SVG scribbles draw in with stroke-dashoffset.
+   - Keyframes: logoOpacityWave, nodeDrift, wordmark-arrive.
+   - Services cycle and Featured pin/scrub via ScrollTrigger.
+   - Header and button hovers.
+   - `prefers-reduced-motion` turns all of it off.
+7. **WebGL / canvas (OGL):**
+   - Hero: textured planes on a ring with perspective, idle drift and mouse parallax.
+   - Research: line-rendered ring sculpture, rotating, with a pause toggle.
+   - Code: 2D canvas particle text that scatters and returns around the cursor.
+   - Each has a static fallback when WebGL is missing or motion is reduced.
+8. **Diff loop:** screenshot localhost:3000 at 1536 CSS px in Chrome, section by section.
+   Compare against anubi1–8, write the differences in `refs/notes.md`, fix them, and repeat. Then
+   a 390px mobile pass, approximated without references unless the user adds phone screenshots.
+
+## Verification
+- `npm run build` passes with no type or lint errors, and there are no console errors in dev.
+- Side-by-side Chrome screenshots of each section against `anubi1–8.png`.
+- Motion checked against the video frames.
+- Reduced motion leaves a static but complete page; the IT/EN toggle swaps every string.
+- Check one more time that nothing deploys: no deploy config, no remote.

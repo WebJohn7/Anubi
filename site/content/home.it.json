@@ -1,0 +1,74 @@
+{
+  "nav": { "home": "Home", "code": "Code", "lab": "Lab", "work": "Work", "contact": "Contattaci", "tagline": "Duo creativo" },
+  "hero": {
+    "caption": "Duo creativo. CGI,\nmotion e web.",
+    "statement1": "Direzione e",
+    "statement2": "Produzione Creativa",
+    "discover": "Scopri"
+  },
+  "clients": { "title": "Clienti" },
+  "services": {
+    "title": "Servizi",
+    "headline1": "Direzione e",
+    "headline2": "Produzione Creativa",
+    "intro": "Immagini, movimento e codice per marchi e studi. Partiamo da un'idea grezza e la portiamo fino al lavoro finito, curato in ogni dettaglio.",
+    "items": [
+      { "name": "Visual", "tags": ["3D", "CGI", "Illustrazione", "AI"] },
+      { "name": "Animation", "tags": ["Motion design", "VFX", "Pubblicità"] },
+      { "name": "Web", "tags": ["Siti web", "WebGL", "Software su misura"] }
+    ],
+    "note": "Lavori direttamente con chi realizza. Un unico interlocutore dal brief alla consegna."
+  },
+  "featured": {
+    "title": "In Evidenza",
+    "beyond": "Oltre i progetti",
+    "scroll": "Scorri per vedere i progetti"
+  },
+  "explore": { "label": "Archivio progetti", "title": "Esplora tutti i lavori" },
+  "research": {
+    "label": "AI / Ricerca e produzione",
+    "title": "CGI, motion e ricerca con AI.",
+    "lead": "Usiamo i modelli generativi accanto a 3D, animazione e compositing, per provare direzioni diverse e arrivare prima all'immagine giusta.",
+    "body": "Per ogni progetto scegliamo cosa generare, cosa modellare e cosa rifinire a mano. Decide il brief, insieme al livello di controllo richiesto.",
+    "study": "Studio di forme",
+    "pause": "Pausa animazione",
+    "play": "Riprendi animazione",
+    "foot1": "Esplorazioni visive, concept e sequenze per campagne.",
+    "foot2": "Ogni passaggio resta nelle nostre mani, dal primo test al file finale.",
+    "cta": "Esplora il lab"
+  },
+  "code": {
+    "label": "Design e sviluppo web",
+    "tag": "/code",
+    "body": "Disegniamo e programmiamo siti, esperienze WebGL e strumenti interni. Forma, interazione e prestazioni nascono insieme.",
+    "tags": ["Siti web", "WebGL / 3D", "Management tools"],
+    "cta": "Esplora Code",
+    "ctaSub": "Vai a code"
+  },
+  "cta": {
+    "title1": "Lavoriamo",
+    "title2": "insieme.",
+    "button": "Contattaci",
+    "mailLead": "o scrivici una mail a",
+    "mail": "hello@example.com"
+  },
+  "footer": {
+    "menu": "Menu",
+    "services": "Servizi",
+    "vat": "P. IVA 00000000000",
+    "privacy": "Privacy Policy",
+    "cookies": "Gestione dei Cookie",
+    "cookiePrefs": "Modifica preferenza cookie",
+    "signoff": "Anubi. Duo creativo.",
+    "studyNote": "Ricostruzione locale a scopo di studio."
+  },
+  "footerServices": [
+    "Animazione 3D e CGI per prodotti e campagne",
+    "Esperienze 3D e contenuti interattivi",
+    "Produzione CGI e AI creativa",
+    "Sviluppo gestionali su misura",
+    "Sviluppo siti web su misura",
+    "Motion design e animazioni 2D e 3D",
+    "Produzione video e spot pubblicitari"
+  ]
+}

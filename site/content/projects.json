@@ -1,0 +1,188 @@
+{
+  "orbit": [
+    {
+      "title": "Emporio Armani x Forestami",
+      "client": "Emporio Armani",
+      "type": "",
+      "slug": "emporio-armani-forestami",
+      "src": "/media/orbit/01.webp"
+    },
+    {
+      "title": "Opendent Plaque Detector",
+      "client": "IDI EVOLUTION",
+      "type": "",
+      "slug": "opendent",
+      "src": "/media/orbit/02.webp"
+    },
+    {
+      "title": "MINE Beauty - Lancio Prodotto",
+      "client": "MINE",
+      "type": "",
+      "slug": "mine-beauty-product-launch",
+      "src": "/media/orbit/03.webp"
+    },
+    {
+      "title": "R3 Living",
+      "client": "R3 LIVING",
+      "type": "",
+      "slug": "r3-living",
+      "src": "/media/orbit/04.webp"
+    },
+    {
+      "title": "Red Studio — Sito web creativo",
+      "client": "Red Studio",
+      "type": "",
+      "slug": "red-studio-creative-website",
+      "src": "/media/orbit/05.webp"
+    },
+    {
+      "title": "DualSense – PlayStation 5",
+      "client": "",
+      "type": "",
+      "slug": "dualsense-playstation-5-reveal-video-cgi",
+      "src": "/media/orbit/06.webp"
+    },
+    {
+      "title": "TermoMix PRO",
+      "client": "",
+      "type": "",
+      "slug": "termomix-pro-explainer-video",
+      "src": "/media/orbit/07.webp"
+    },
+    {
+      "title": "Oakley Meta HSTN — Mix N Match",
+      "client": "Oakley, Meta",
+      "type": "",
+      "slug": "oakley-meta-hstn-mixnmatch",
+      "src": "/media/orbit/08.webp"
+    },
+    {
+      "title": "okokok — PRIMO",
+      "client": "okokok",
+      "type": "",
+      "slug": "okokok-design",
+      "src": "/media/orbit/09.webp"
+    },
+    {
+      "title": "Diadora Utility",
+      "client": "Diadora",
+      "type": "",
+      "slug": "diadora-utility",
+      "src": "/media/orbit/10.webp"
+    },
+    {
+      "title": "Efferalgan - Spot TV",
+      "client": "UPSA",
+      "type": "",
+      "slug": "upsa-efferalgan-tv-commercial",
+      "src": "/media/orbit/11.webp"
+    },
+    {
+      "title": "UPSA x NOURISHED - Gummies",
+      "client": "UPSA, Nourished",
+      "type": "",
+      "slug": "upsa-nourished-gummies-3d-commercial",
+      "src": "/media/orbit/12.webp"
+    },
+    {
+      "title": "Converse Cherry - AW LAB",
+      "client": "AW LAB, Converse",
+      "type": "",
+      "slug": "aw-lab-converse-cherry",
+      "src": "/media/orbit/13.webp"
+    },
+    {
+      "title": "Mullet Tea - Can Launch",
+      "client": "",
+      "type": "",
+      "slug": "mullet-tea-can-launch",
+      "src": "/media/orbit/14.webp"
+    }
+  ],
+  "featured": [
+    {
+      "title": "Oakley Meta HSTN — Mix N Match",
+      "client": "Oakley, Meta",
+      "type": "Animazione 3D",
+      "slug": "oakley-meta-hstn-mixnmatch",
+      "src": "/media/featured/01.webp"
+    },
+    {
+      "title": "okokok — PRIMO",
+      "client": "okokok",
+      "type": "Branding",
+      "slug": "okokok-design",
+      "src": "/media/featured/02.webp"
+    },
+    {
+      "title": "Diadora Utility",
+      "client": "Diadora",
+      "type": "CGI",
+      "slug": "diadora-utility",
+      "src": "/media/featured/03.webp"
+    },
+    {
+      "title": "Efferalgan - Spot TV",
+      "client": "UPSA",
+      "type": "Spot Pubblicitario",
+      "slug": "upsa-efferalgan-tv-commercial",
+      "src": "/media/featured/04.webp"
+    },
+    {
+      "title": "UPSA x NOURISHED - Gummies",
+      "client": "UPSA, Nourished",
+      "type": "Spot Pubblicitario",
+      "slug": "upsa-nourished-gummies-3d-commercial",
+      "src": "/media/featured/05.webp"
+    },
+    {
+      "title": "Converse Cherry - AW LAB",
+      "client": "AW LAB, Converse",
+      "type": "Direzione Artistica",
+      "slug": "aw-lab-converse-cherry",
+      "src": "/media/featured/06.webp"
+    }
+  ],
+  "logos": [
+    {
+      "name": "Oakley",
+      "src": "/media/logos/01.svg"
+    },
+    {
+      "name": "Diadora",
+      "src": "/media/logos/02.webp"
+    },
+    {
+      "name": "AW LAB",
+      "src": "/media/logos/03.webp"
+    },
+    {
+      "name": "Kering Eyewear",
+      "src": "/media/logos/04.webp"
+    },
+    {
+      "name": "Emporio Armani",
+      "src": "/media/logos/05.webp"
+    },
+    {
+      "name": "Converse",
+      "src": "/media/logos/06.webp"
+    },
+    {
+      "name": "R3 LIVING",
+      "src": "/media/logos/07.webp"
+    },
+    {
+      "name": "UPSA",
+      "src": "/media/logos/08.webp"
+    },
+    {
+      "name": "Luxottica",
+      "src": "/media/logos/09.svg"
+    },
+    {
+      "name": "Lavazza",
+      "src": "/media/logos/10.webp"
+    }
+  ]
+}

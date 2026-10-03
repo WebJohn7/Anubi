@@ -1,0 +1,78 @@
+/* Design tokens measured from anubi.io (refs/reference.css + computed styles at 1536px). */
+:root {
+  /* surfaces */
+  --bg: #fcfcfa;
+  --bg-body: #fcfcfc;
+  --surface: #ffffff;
+  --dark: #171715;
+  --pill: #eeeeee;
+  --pill-strong: #e5e5e5;
+
+  /* text */
+  --text: #131313;
+  --text-black: #0f0f0f;
+  --text-muted: #62625c;
+  --text-soft: #4d4d49;
+  --text-label: #b5b5ad;
+  --text-on-dark: #fcfcfa;
+  --text-on-dark-muted: #a9a9a2;
+
+  /* lines */
+  --rule: #d9d9d3;
+  --rule-dark: #3a3a37;
+
+  /* accents (color / ink pairs from the "study" palette) */
+  --violet: #8060f5;
+  --violet-ink: #6543da;
+  --orange: #ff7415;
+  --orange-ink: #f06400;
+  --blue: #2878f0;
+  --blue-ink: #175ecc;
+  --yellow: #ffd60a;
+
+  /* type */
+  --font-ui: var(--font-bricolage), "Bricolage Grotesque Fallback", Arial, sans-serif;
+  --font-display: var(--font-epilogue), "Epilogue Fallback", Arial, sans-serif;
+  --font-mono: var(--font-plex-mono), ui-monospace, monospace;
+
+  --text-heading-xl: 6rem;
+  --text-heading-l: 4rem;
+  --text-heading-m: 3rem;
+  --text-heading-s: 2.83rem;
+  --text-heading-xs: 2rem;
+  --text-heading-xxs: 1.41rem;
+  --text-body: 1rem;
+  --text-caption: 0.71rem;
+
+  /* layout */
+  --gutter: 48px;
+  --content: calc(100vw - var(--gutter) * 2);
+
+  /* motion */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-io: cubic-bezier(0.67, 0, 0.285, 1);
+  --ease-soft: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@media (max-width: 999px) {
+  :root {
+    --gutter: 32px;
+    --text-heading-xl: 4rem;
+    --text-heading-l: 3rem;
+    --text-heading-m: 2rem;
+    --text-heading-s: 1.8rem;
+    --text-heading-xs: 1.41rem;
+    --text-heading-xxs: 1.2rem;
+  }
+}
+
+@media (max-width: 640px) {
+  :root {
+    --gutter: 16px;
+    --text-heading-xl: 3rem;
+    --text-heading-l: 2.4rem;
+    --text-heading-m: 1.8rem;
+    --text-heading-s: 1.5rem;
+    --text-heading-xs: 1.3rem;
+  }
+}
