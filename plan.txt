@@ -21,6 +21,23 @@ length and tone instead of copying theirs.
 - Deviation: the hero ring and Featured gallery use CSS 3D transforms driven by GSAP instead of
   OGL planes. The look is the same and it allows DOM hover labels. OGL is used for the Research sculpture.
 
+## Phase 2 (2026-10-08): public deploy with neutral branding — supersedes "local only" above
+Decision (user): publish to GitHub Pages, but with no Anubi assets or branding in the deployed site.
+Steps:
+1. Neutral brand "NORVA" in one place (`lib/brand.ts`). The wordmark is an inline SVG `<text>` in
+   the display font (`components/shared/Wordmark.tsx`); the header mark is an inline SVG.
+2. Placeholder art, my own: `scripts/make-placeholders.mjs` writes abstract gradient SVGs
+   (14 orbit, 6 featured) and 10 fictional client wordmarks into `public/placeholder/`.
+   `content/projects.json` points there, with fictional project titles and client names.
+3. Copy: footer sign-off uses the neutral name; the study note says "Study rebuild of the anubi.io
+   layout and motion. Not affiliated with Anubi." Page title likewise.
+4. Static export: `output: "export"`, `basePath` from `NEXT_PUBLIC_BASE_PATH` (`/Anubi` on Pages),
+   with an `asset()` helper for plain `<img src>` paths.
+5. `.github/workflows/deploy.yml`: build `site/` and deploy `site/out` with actions/deploy-pages.
+   User sets Settings → Pages → Source = "GitHub Actions" (can't be done from here, no `gh`).
+6. Verify: `npm run lint`, `npm run build` with the base path, serve `out/` and check in Chrome.
+   `public/media/` stays gitignored and unused.
+
 ## Design tokens (measured)
 - **Background** `#fcfcfa` (body `#fcfcfc`). **Text** `#131313` / `#0f0f0f`. **Muted** `#62625c`, `#4d4d49`.
   **Label** `#b5b5ad`. **Rule** `#d9d9d3`. **Dark sections** `#171715`, text `#fcfcfa`.

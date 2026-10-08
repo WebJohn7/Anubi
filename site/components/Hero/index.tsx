@@ -3,6 +3,8 @@ import projects from "@/content/projects.json";
 import { useT } from "@/lib/locale";
 import { gsap, prefersReducedMotion, scrollToTarget } from "@/lib/smooth";
 import { ArrowDown, ArrowUpRight, Asterisk } from "@/components/shared/Icons";
+import { Wordmark } from "@/components/shared/Wordmark";
+import { asset } from "@/lib/brand";
 import s from "./style.module.css";
 
 /** Ring slots measured from the reference at 1536px: centre x/y in %, width in px. */
@@ -123,7 +125,7 @@ export default function Hero() {
               }
             >
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={p.src} alt="" loading="eager" draggable={false} />
+              <img src={asset(p.src)} alt="" loading="eager" draggable={false} />
               <span className={s.label}>
                 {p.title}
                 <ArrowUpRight size={10} />
@@ -162,8 +164,7 @@ export default function Hero() {
             <Asterisk size={30} />
           </span>
           <h1 className={s.wordmark} data-wordmark>
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/media/anubi-footer.svg" alt="Anubi" width={597} height={92} />
+            <Wordmark />
           </h1>
         </div>
         <p className={s.caption} data-hero-copy>

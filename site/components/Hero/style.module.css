@@ -86,7 +86,7 @@
   width: min(518px, 70vw);
 }
 
-.wordmark img {
+.wordmark svg {
   width: 100%;
   height: auto;
 }

@@ -3,6 +3,7 @@ import projects from "@/content/projects.json";
 import { useT } from "@/lib/locale";
 import { gsap, ScrollTrigger, prefersReducedMotion, scrollToTarget } from "@/lib/smooth";
 import { ArrowDown, ArrowDownRight, ArrowUpRight, Asterisk } from "@/components/shared/Icons";
+import { asset } from "@/lib/brand";
 import s from "./style.module.css";
 
 const items = projects.featured;
@@ -98,7 +99,7 @@ export default function Featured() {
           <article key={item.slug} data-feature className={s.card} aria-hidden={i !== index}>
             <div className={s.media}>
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={item.src} alt={item.title} draggable={false} />
+              <img src={asset(item.src)} alt={item.title} draggable={false} />
             </div>
           </article>
         ))}

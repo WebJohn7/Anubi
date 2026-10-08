@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import { useLocale } from "@/lib/locale";
 import { gsap, prefersReducedMotion, scrollToTarget } from "@/lib/smooth";
+import { Wordmark } from "@/components/shared/Wordmark";
 import s from "./style.module.css";
 
 export default function Footer() {
@@ -84,8 +85,7 @@ export default function Footer() {
 
       <div className={s.markWrap}>
         <div ref={mark} className={s.mark}>
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/media/anubi-footer.svg" alt="Anubi" width={597} height={92} />
+          <Wordmark />
         </div>
       </div>
 

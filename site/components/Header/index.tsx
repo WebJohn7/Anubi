@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import { useT } from "@/lib/locale";
 import { scrollToTarget } from "@/lib/smooth";
 import { ArrowUpRight } from "@/components/shared/Icons";
+import { BrandMark } from "@/components/shared/Wordmark";
+import { BRAND } from "@/lib/brand";
 import s from "./style.module.css";
 
 /** Hides the bar while scrolling down past the hero and brings it back on any upward scroll. */
@@ -40,10 +42,9 @@ export default function Header() {
     <header className={`${s.header} ${hidden ? s.hidden : ""}`}>
       <div className={s.bar}>
         <a href="#top" className={s.brand} onClick={(e) => go(e, "#top")}>
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/media/anubi.svg" alt="" width={34} height={34} className={s.mark} />
+          <BrandMark className={s.mark} />
           <span className={s.brandText}>
-            <span className={s.name}>Anubi</span>
+            <span className={s.name}>{BRAND}</span>
             <span className={s.tagline}>{t.nav.tagline}</span>
           </span>
         </a>

@@ -1,188 +1,188 @@
 {
   "orbit": [
     {
-      "title": "Emporio Armani x Forestami",
-      "client": "Emporio Armani",
-      "type": "",
-      "slug": "emporio-armani-forestami",
-      "src": "/media/orbit/01.webp"
-    },
-    {
-      "title": "Opendent Plaque Detector",
-      "client": "IDI EVOLUTION",
-      "type": "",
-      "slug": "opendent",
-      "src": "/media/orbit/02.webp"
-    },
-    {
-      "title": "MINE Beauty - Lancio Prodotto",
-      "client": "MINE",
-      "type": "",
-      "slug": "mine-beauty-product-launch",
-      "src": "/media/orbit/03.webp"
-    },
-    {
-      "title": "R3 Living",
-      "client": "R3 LIVING",
-      "type": "",
-      "slug": "r3-living",
-      "src": "/media/orbit/04.webp"
-    },
-    {
-      "title": "Red Studio — Sito web creativo",
-      "client": "Red Studio",
-      "type": "",
-      "slug": "red-studio-creative-website",
-      "src": "/media/orbit/05.webp"
-    },
-    {
-      "title": "DualSense – PlayStation 5",
+      "title": "Tidal Room",
       "client": "",
       "type": "",
-      "slug": "dualsense-playstation-5-reveal-video-cgi",
-      "src": "/media/orbit/06.webp"
+      "slug": "tidal-room",
+      "src": "/placeholder/orbit/01.svg"
     },
     {
-      "title": "TermoMix PRO",
+      "title": "Halden Spring Launch",
+      "client": "Halden",
+      "type": "",
+      "slug": "halden-spring-launch",
+      "src": "/placeholder/orbit/02.svg"
+    },
+    {
+      "title": "Glasshouse Identity",
       "client": "",
       "type": "",
-      "slug": "termomix-pro-explainer-video",
-      "src": "/media/orbit/07.webp"
+      "slug": "glasshouse-identity",
+      "src": "/placeholder/orbit/03.svg"
     },
     {
-      "title": "Oakley Meta HSTN — Mix N Match",
-      "client": "Oakley, Meta",
+      "title": "Meridio Explainer",
+      "client": "Meridio",
       "type": "",
-      "slug": "oakley-meta-hstn-mixnmatch",
-      "src": "/media/orbit/08.webp"
+      "slug": "meridio-explainer",
+      "src": "/placeholder/orbit/04.svg"
     },
     {
-      "title": "okokok — PRIMO",
-      "client": "okokok",
+      "title": "Ostra Studio Website",
+      "client": "Ostra&Co",
       "type": "",
-      "slug": "okokok-design",
-      "src": "/media/orbit/09.webp"
+      "slug": "ostra-studio-website",
+      "src": "/placeholder/orbit/05.svg"
     },
     {
-      "title": "Diadora Utility",
-      "client": "Diadora",
+      "title": "Kova Reveal CGI",
+      "client": "Kova",
       "type": "",
-      "slug": "diadora-utility",
-      "src": "/media/orbit/10.webp"
+      "slug": "kova-reveal-cgi",
+      "src": "/placeholder/orbit/06.svg"
     },
     {
-      "title": "Efferalgan - Spot TV",
-      "client": "UPSA",
-      "type": "",
-      "slug": "upsa-efferalgan-tv-commercial",
-      "src": "/media/orbit/11.webp"
-    },
-    {
-      "title": "UPSA x NOURISHED - Gummies",
-      "client": "UPSA, Nourished",
-      "type": "",
-      "slug": "upsa-nourished-gummies-3d-commercial",
-      "src": "/media/orbit/12.webp"
-    },
-    {
-      "title": "Converse Cherry - AW LAB",
-      "client": "AW LAB, Converse",
-      "type": "",
-      "slug": "aw-lab-converse-cherry",
-      "src": "/media/orbit/13.webp"
-    },
-    {
-      "title": "Mullet Tea - Can Launch",
+      "title": "Night Ferry Titles",
       "client": "",
       "type": "",
-      "slug": "mullet-tea-can-launch",
-      "src": "/media/orbit/14.webp"
+      "slug": "night-ferry-titles",
+      "src": "/placeholder/orbit/07.svg"
+    },
+    {
+      "title": "Lumen Lab Campaign",
+      "client": "Lumen Lab",
+      "type": "",
+      "slug": "lumen-lab-campaign",
+      "src": "/placeholder/orbit/08.svg"
+    },
+    {
+      "title": "Pellica Packaging",
+      "client": "Pellica",
+      "type": "",
+      "slug": "pellica-packaging",
+      "src": "/placeholder/orbit/09.svg"
+    },
+    {
+      "title": "Brisk Running Spot",
+      "client": "brisk",
+      "type": "",
+      "slug": "brisk-running-spot",
+      "src": "/placeholder/orbit/10.svg"
+    },
+    {
+      "title": "Talvo Pavilion",
+      "client": "Talvo",
+      "type": "",
+      "slug": "talvo-pavilion",
+      "src": "/placeholder/orbit/11.svg"
+    },
+    {
+      "title": "Vireo Gummies 3D",
+      "client": "Vireo",
+      "type": "",
+      "slug": "vireo-gummies-3d",
+      "src": "/placeholder/orbit/12.svg"
+    },
+    {
+      "title": "Paper Comet",
+      "client": "",
+      "type": "",
+      "slug": "paper-comet",
+      "src": "/placeholder/orbit/13.svg"
+    },
+    {
+      "title": "Slow Orbit Teaser",
+      "client": "",
+      "type": "",
+      "slug": "slow-orbit-teaser",
+      "src": "/placeholder/orbit/14.svg"
     }
   ],
   "featured": [
     {
-      "title": "Oakley Meta HSTN — Mix N Match",
-      "client": "Oakley, Meta",
+      "title": "Lumen Lab Campaign",
+      "client": "Lumen Lab",
       "type": "Animazione 3D",
-      "slug": "oakley-meta-hstn-mixnmatch",
-      "src": "/media/featured/01.webp"
+      "slug": "lumen-lab-campaign",
+      "src": "/placeholder/featured/01.svg"
     },
     {
-      "title": "okokok — PRIMO",
-      "client": "okokok",
+      "title": "Glasshouse Identity",
+      "client": "Glasshouse",
       "type": "Branding",
-      "slug": "okokok-design",
-      "src": "/media/featured/02.webp"
+      "slug": "glasshouse-identity",
+      "src": "/placeholder/featured/02.svg"
     },
     {
-      "title": "Diadora Utility",
-      "client": "Diadora",
+      "title": "Kova Reveal CGI",
+      "client": "Kova",
       "type": "CGI",
-      "slug": "diadora-utility",
-      "src": "/media/featured/03.webp"
+      "slug": "kova-reveal-cgi",
+      "src": "/placeholder/featured/03.svg"
     },
     {
-      "title": "Efferalgan - Spot TV",
-      "client": "UPSA",
+      "title": "Brisk Running Spot",
+      "client": "brisk",
       "type": "Spot Pubblicitario",
-      "slug": "upsa-efferalgan-tv-commercial",
-      "src": "/media/featured/04.webp"
+      "slug": "brisk-running-spot",
+      "src": "/placeholder/featured/04.svg"
     },
     {
-      "title": "UPSA x NOURISHED - Gummies",
-      "client": "UPSA, Nourished",
+      "title": "Vireo Gummies 3D",
+      "client": "Vireo",
       "type": "Spot Pubblicitario",
-      "slug": "upsa-nourished-gummies-3d-commercial",
-      "src": "/media/featured/05.webp"
+      "slug": "vireo-gummies-3d",
+      "src": "/placeholder/featured/05.svg"
     },
     {
-      "title": "Converse Cherry - AW LAB",
-      "client": "AW LAB, Converse",
+      "title": "Talvo Pavilion",
+      "client": "Talvo",
       "type": "Direzione Artistica",
-      "slug": "aw-lab-converse-cherry",
-      "src": "/media/featured/06.webp"
+      "slug": "talvo-pavilion",
+      "src": "/placeholder/featured/06.svg"
     }
   ],
   "logos": [
     {
-      "name": "Oakley",
-      "src": "/media/logos/01.svg"
+      "name": "Halden",
+      "src": "/placeholder/logos/01.svg"
     },
     {
-      "name": "Diadora",
-      "src": "/media/logos/02.webp"
+      "name": "Meridio",
+      "src": "/placeholder/logos/02.svg"
     },
     {
-      "name": "AW LAB",
-      "src": "/media/logos/03.webp"
+      "name": "Kova",
+      "src": "/placeholder/logos/03.svg"
     },
     {
-      "name": "Kering Eyewear",
-      "src": "/media/logos/04.webp"
+      "name": "Ostra&Co",
+      "src": "/placeholder/logos/04.svg"
     },
     {
-      "name": "Emporio Armani",
-      "src": "/media/logos/05.webp"
+      "name": "Lumen Lab",
+      "src": "/placeholder/logos/05.svg"
     },
     {
-      "name": "Converse",
-      "src": "/media/logos/06.webp"
+      "name": "brisk",
+      "src": "/placeholder/logos/06.svg"
     },
     {
-      "name": "R3 LIVING",
-      "src": "/media/logos/07.webp"
+      "name": "Talvo",
+      "src": "/placeholder/logos/07.svg"
     },
     {
-      "name": "UPSA",
-      "src": "/media/logos/08.webp"
+      "name": "Pellica",
+      "src": "/placeholder/logos/08.svg"
     },
     {
-      "name": "Luxottica",
-      "src": "/media/logos/09.svg"
+      "name": "N/Orbit",
+      "src": "/placeholder/logos/09.svg"
     },
     {
-      "name": "Lavazza",
-      "src": "/media/logos/10.webp"
+      "name": "Vireo",
+      "src": "/placeholder/logos/10.svg"
     }
   ]
 }
