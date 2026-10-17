@@ -7,6 +7,8 @@ endorsed by or a replacement for Anubi**. The original design belongs to Anubi.
 This repo contains only my code. None of Anubi's images, client logos, wordmark or stylesheets
 are included, and the longer body copy is my own text.
 
+**Live:** https://quandevcz.github.io/Anubi/
+
 ## Stack
 
 - Next.js 15 (Pages Router) + TypeScript, CSS Modules
